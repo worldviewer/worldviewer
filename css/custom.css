@@ -1,0 +1,352 @@
+/* Document Structure */
+.container {
+	position: relative;
+  top: 150px;
+	width: 800px;
+	height: 800px;
+}
+
+.window-frame {
+  position: relative;
+  top: 0;
+  left: 150px;
+  width: 450px;
+  height: 916px;
+}
+
+#window-img {
+  position: absolute;
+  width: 450px;
+  height: 916px;
+  z-index: 0;
+}
+
+.footer {
+  position: relative;
+  height: 300px;
+  width: 800px;
+  top: 150px;
+}
+
+/* Bootstrap Styles */
+.thumbnail-thick {
+  padding: 20px;
+  background-color: #000;
+  border: 0 none;
+  border-radius: 0;
+  box-shadow: 0;
+}
+
+.thumbnail-thin {
+  padding: 4px;
+  background-color: #000;
+  border: 0 none;
+  border-radius: 4px;
+  box-shadow: 0;
+}
+
+.RoundedRectangle {
+  border-radius: 25px;
+}
+
+.RoundedRectangle-thin {
+  border-radius: 15px;
+}
+
+.CircleImageBorderRadius {
+  border-radius: 150px;
+}
+
+.drop-shadow {
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .5);
+}
+
+.abs {
+  position: absolute;
+}
+
+/* References */
+#number1-container {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  left: 18px;
+  top: 242px;
+}
+
+#number2-container {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  left: 17px;
+  top: 551px;
+}
+
+#number3-container {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  left: 255px;
+  top: 131px;
+}
+
+#number1 {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+#number2 {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+#number3 {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  z-index: 2;
+}
+
+#inner1 {
+  position: absolute;
+  opacity: 0.25;
+  top: 0;
+  right: 15px;
+  color: white;
+  padding-left: 2px;
+  background-color: red;
+  height: 32px;
+}
+
+#inner2 {
+  position: absolute;
+  opacity: 0.25;
+  top: 0;
+  right: 15px;
+  color: white;
+  padding-left: 2px;
+  background-color: red;
+  height: 16px;
+}
+
+#inner3 {
+  position: absolute;
+  opacity: 0.25;
+  top: 0;
+  left: 15px;
+  color: white;
+  padding-right: 2px;
+  background-color: red;
+  height: 32px;
+  z-index: 2;
+}
+
+/* Circular EDM Inset */
+#EDM-container {
+  position: absolute;
+  left: 470px;
+  top: 115px;
+}
+
+#EDM-img {
+  position: absolute;
+	width: 275px;
+	height: 275px;
+  z-index: 1;
+}
+
+/* Zoomable Images */
+#Mars-zoom {
+  left: 17px;
+  top: 257px;
+  position: absolute;
+  width: 416px;
+  height: 305px;
+  z-index: -5;
+}
+
+#Phobos-zoom {
+  left: 17px;
+  top: 581px;
+  position: absolute;
+  width: 416px;
+  height: 318px;
+  z-index: -5;
+}
+
+/* Annotation Nodes */
+#grooves-img {
+  position: absolute;
+  width: 100px;
+  height: 96px;
+  left: 100px;
+  top: 630px;
+  z-index: 1;
+}
+
+#chances-img {
+  position: absolute;
+  width: 119px;
+  height: 50px;
+  left: 580px;
+  top: 630px;
+  z-index: 1;
+}
+
+#pit-chains-img {
+  position: absolute;
+  width: 155px;
+  height: 42px;
+  left: 70px;
+  top: 300px;
+  z-index: 1;
+}
+
+#roof-collapse-img {
+  position: absolute;
+  width: 90px;
+  height: 81px;
+  left: 0px;
+  top: 330px;
+  z-index: 0;
+}
+
+#microscope-img {
+  position: absolute;
+  width: 130px;
+  height: 80px;
+  left: 680px;
+  top: 150px;
+  z-index: 2;
+}
+
+#rubble-img {
+  position: absolute;
+  width: 159px;
+  height: 79px;
+  left: 530px;
+  top: 400px;
+  z-index: 2;
+}
+
+#pit-depths-img {
+  position: absolute;
+  width: 127px;
+  height: 78px;
+  left: 680px;
+  top: 430px;
+  z-index: 3;
+}
+
+/* Narrative Text */
+#framework-text-img {
+  position: absolute;
+  width: 408px;
+  height: auto;
+  left: 188px;
+  top: 15px;
+}
+
+#chains-example-img {
+  position: absolute;
+  width: 241px;
+  height: auto;
+  left: 240px;
+  top: 270px;
+}
+
+#separate-explanations-img {
+  position: absolute;
+  width: 182px;
+  height: auto;
+  left: 188px;
+  top: 790px;
+}
+
+/* Labels */
+#conventional-view-img {
+  position: absolute;
+  width: 12px;
+  height: auto;
+  left: 167px;
+  top: 467px;
+  z-index: 0;
+}
+
+#electrical-view-img {
+  position: absolute;
+  width: 13px;
+  height: auto;
+  left: 601px;
+  top: 482px;
+}
+
+#phobos-label-img {
+  position: absolute;
+  width: auto;
+  height: 13px;
+  left: 485px;
+  top: 583px;
+}
+
+#mars-label-img {
+  position: absolute;
+  width: 215px;
+  height: auto;
+  left: 180px;
+  top: 518px;
+}
+
+/* Animated SVG icons for directing attention flow */
+.flow-icons {
+  position: absolute;
+  z-index: 10;
+}
+
+#flow-a {
+  left: 140px;
+  top: 40px;
+}
+
+/* Custom Annotation Node experimentation */
+#node-div {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+}
+
+#node-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#node-input {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  display: none;
+}
+
+/* Snap canvas experimentation */
+#svg-container {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 800px;
+  height: 800px;
+  z-index: -10;
+}
+
+#svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -10;
+}

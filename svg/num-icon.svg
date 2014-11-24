@@ -1,0 +1,28 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100%" height="100%" viewBox="0 0 360.504 360.504" style="enable-background:new 0 0 360.504 360.504;"
+	 xml:space="preserve" id="num">
+
+<style type="text/css">
+	<![CDATA[
+		.icon-circle {fill:#FFFFFF;stroke:#FF0000;stroke-width:16;stroke-miterlimit:10;}
+		.icon-wave {fill:#FF0000;stroke:#FF0000;stroke-width:21.052;stroke-miterlimit:10;}
+		.st2 {font-family:'Helvetica-Bold';}
+		.st3 {font-size:70pt;}
+		.st4 {fill:#FF0000;stroke:#FF0000;stroke-miterlimit:10;}
+	]]>
+</style>
+
+<g id="wave">
+	<circle class="icon-wave lines" cx="178.328" cy="178.286" r="104.638">
+		<animate attributeName="r" from="104.638" to="180" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" />	
+		<animate attributeName="opacity" from="1" to="0" dur="5s" begin="0s" fill="freeze" repeatCount="indefinite" />	
+	</circle>
+</g>
+<g id="circle">
+	<circle class="icon-circle lines" cx="178.328" cy="178.285" r="108">
+	</circle>
+</g>
+<!-- <text id="number" transform="matrix(1 0 0 1 150.8315 210.9546)" class="lines st4 st2 st3">100</text> -->
+<text id="number-text" text-anchor="middle" x="180" y="207" class="lines st4 st2 st3">0</text>
+
+</svg>

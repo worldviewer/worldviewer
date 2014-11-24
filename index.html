@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Discharge Machining (EDM) Interactive Infographic</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/external/jquery/jquery.js"></script>
+
+	<!-- jQuery SVG says it needs to be loaded early -->
+    <script type="text/javascript" src="js/jquery.svg.js"></script>
+    <script type="text/javascript" src="js/jquery.svgdom.js"></script>
+    <script type="text/javascript" src="js/jquery.svgfilter.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.svg.css"> 
+</head>
+
+<body>
+	<h1 align="center">Electric Discharge Machining<br>Infographic Prototype</h1>
+	<p align="center">This is an attempt to test various features for an interactive infographic.<br>The original infographic can be viewed online <a href="https://plus.google.com/108466508041843226480/posts/5Bpk1oRbEec" target="_blank">here</a>.  The annotations enlarge with clicking.</p>
+
+	<div class="container">
+
+		<!-- Experiment: Create a new concept node; display is currently set to none in custom.css
+	                     Currently disabled. -->
+
+		<div id="node-div">
+			<a href="#" id="node-button" class="btn btn-primary abs">Double-click</a>
+			<input id="node-input" type="text" name="nodeName">
+		</div>
+
+		<!-- Experiment: Draw a line using SVG; display is currently set to none in custom.css
+		                 Currently disabled -->
+
+		<div id="svg-container">
+			<svg id="svg"></svg>
+		</div>
+
+<!-- 	This was an attempt to help the reader to understand the infographic's flow.  Uncommenting element
+		flow-a-element shows what this would look like, but I need to figure out how to load SVG elements
+		into the DOM.
+ -->
+		<div id="flow-a" class="flow-icons">
+			<!-- <object id="flow-a-element" class="flow" data="svg/num-icon.svg" width="50" height="50"></object> -->
+		</div>
+
+		<div class="window-frame">
+			<img id="window-img" src="img/window.png">
+
+			<!-- References -->
+
+			<div id="number1-container">
+				<div class="num-div"><input type="image" id="number1" src="img/1.jpg"></div>
+				<div id="inner1" class="slide-div small">http://www.esa.int/Our_Activities/Space_Science/Mars_Express/The_pit-chains_of_Mars_a_possible_place_for_life</div>
+			</div>
+
+			<div id="number2-container">
+				<div class="num-div"><input type="image" id="number2" src="img/2.jpg"></div>
+				<div id="inner2" class="slide-div small">http://apod.nasa.gov/apod/ap100317.html</div>
+			</div>
+
+			<!-- Martian Image -->
+
+			<a href="http://www.esa.int/Our_Activities/Space_Science/Mars_Express/The_pit-chains_of_Mars_a_possible_place_for_life" target="_blank">
+				<img id="Mars-zoom" class="zoom" src="img/Martian-pit-chains-small.png" data-zoom-image="img/Martian-pit-chains-super.jpg">
+			</a>
+			
+			<!-- Phobos Image -->
+
+			<a href="http://apod.nasa.gov/apod/ap100317.html" target="_blank">
+				<img id="Phobos-zoom" class="zoom" src="img/Phobos-crater-chains-small.jpg" data-zoom-image="img/Phobos-crater-chains.jpg">
+			</a>
+
+		</div> <!-- end window-frame -->
+
+		<!-- Circular EDM Microscope Inset -->
+
+		<div id="EDM1">
+			<div id="EDM-container">
+				<a href="https://www.thunderbolts.info/tpod/2005/arch05/050607arsamons.htm" target="_blank">
+					<img id="EDM-img" class="CircleImageBorderRadius thumbnail thumbnail-thick abs" src="img/EDM-laboratory-crater-chain-large.jpg">
+				</a>
+
+				<!-- References -->
+
+				<div id="number3-container">
+					<div class="num-div"><input type="image" id="number3" src="img/3.jpg"></div>
+				<div id="inner3" class="slide-div small">https://www.thunderbolts.info/tpod/2005/images05/050607edm.jpg<br>https://www.thunderbolts.info/tpod/2005/arch05/050607arsamons.htm</div>
+			</div>				
+			</div>
+		</div>
+
+		<!-- Annotation Nodes -->
+
+		<img id="grooves-img" class="node obscures-phobos-left RoundedRectangle-thin thumbnail thumbnail-thin drop-shadow abs" src="img/grooves-from-shock-waves.jpg" data-link="http://www.esa.int/Our_Activities/Space_Science/Rosetta/Lutetia_s_dark_side_hosts_hidden_crater">
+
+		<img id="chances-img" class="node obscures-phobos-right RoundedRectangle-thin thumbnail thumbnail-thin drop-shadow abs" src="img/crater-chain-chances-zero.jpg" data-link="https://www.thunderbolts.info/tpod/2005/arch05/050810crater.htm">
+
+		<img id="pit-chains-img" class="node obscures-mars-left RoundedRectangle-thin thumbnail thumbnail-thin drop-shadow abs" src="img/pit-chains-volcanic-origin.jpg" data-link="http://www.esa.int/Our_Activities/Space_Science/Mars_Express/The_pit-chains_of_Mars_a_possible_place_for_life">
+
+		<img id="roof-collapse-img" class="node RoundedRectangle-thin thumbnail thumbnail-thin drop-shadow abs" src="img/roof-collapse.jpg" data-link="http://www.esa.int/Our_Activities/Space_Science/Mars_Express/The_pit-chains_of_Mars_a_possible_place_for_life">
+
+		<img id="microscope-img" class="node RoundedRectangle-thin thumbnail thumbnail-thin drop-shadow abs" src="img/EDM-caption.jpg" data-link="https://www.thunderbolts.info/tpod/2005/arch05/050607arsamons.htm">
+
+		<img id="rubble-img" class="node obscures-mars-right RoundedRectangle-thin thumbnail thumbnail-thin drop-shadow abs" src="img/rubble-and-broken-edges.jpg" data-link="https://www.thunderbolts.info/tpod/2005/arch05/050607arsamons.htm">
+
+		<img id="pit-depths-img" class="node RoundedRectangle-thin thumbnail thumbnail-thin drop-shadow abs" src="img/collapse-pit-depths.jpg" data-link="https://www.thunderbolts.info/tpod/2005/arch05/050607arsamons.htm">
+
+		<!-- Narrative Overlays are in image format for now.  Complex text area shapes are tricky. -->
+
+		<img id="framework-text-img" class="narrative" src="img/scientific-framework-text.png">
+
+		<img id="chains-example-img" class="narrative" src="img/crater-chains-as-an-example.png">
+
+		<img id="separate-explanations-img" class="narrative" src="img/But-why-suggest-two-separate-explanations.png">		
+
+		<!-- Labels -->
+
+		<img id="conventional-view-img" class="thelabel" src="img/conventional-view.png">
+
+		<img id="electrical-view-img" class="thelabel" src="img/electrical-view.png">
+
+		<img id="phobos-label-img" class="thelabel" src="img/Martian-moon-Phobos.png">
+
+		<img id="mars-label-img" class="thelabel" src="img/Tractus-Catena.png">
+
+		<!-- JavaScript Includes:
+		Bootstrap + jQuery + jQuery UI + Custom -->
+
+		<script src="js/respond.min.js"></script>
+
+		<!-- Experimenting with various easings in jQuery UI -->
+		<script src="js/jquery-ui.min.js"></script>
+
+		<!-- This is a Javascript plugin that allows zooming into images -->
+		<script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
+
+		<!-- Using Bootstrap for formatting, especially useful for creation of annotation nodes -->
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- This is the Snap.svg API for working with SVG elements in Javascript, similar to jQuery -->
+		<script src="js/snap.svg-min.js"></script>
+
+		<!-- My code -->
+		<script src="js/custom.js"></script>
+
+    </div> <!-- end container -->
+    <div class="footer"></div>
+</body>
+</html>

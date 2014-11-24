@@ -1,0 +1,58 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"
+	 height="100%" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" id="icon">
+<defs>
+	<style type="text/css">
+		<![CDATA[
+		.lines{fill:#FFFFFF;stroke:#D0D1D3;stroke-width:9.9804;stroke-miterlimit:10;}
+		.st1{fill:none;stroke:#D0D1D3;stroke-width:9.3358;stroke-miterlimit:10;}
+		.st2{fill:#FFFFFF;stroke:#D0D1D3;stroke-width:9.3358;stroke-miterlimit:10;}
+
+		#details { display: block; }
+
+		@media screen and (max-width: 150px) {
+		    #details {
+		        display: none;
+		    }
+		}
+
+		#icon:hover .lines {
+		    fill: #262262;
+		    stroke: white;
+		    transition: .4s;
+		}
+
+		#icon.clicktrigger .lines {
+		    fill: white !important;
+		    stroke: #262262;
+		    transition: .4s;
+		}
+
+		]]>
+	</style>
+
+	<script type="text/javascript">
+		var clickAnim = document.querySelector('#icon');
+
+		clickAnim.addEventListener('click', function() {
+		    this.classList.toggle('clicktrigger');
+		})
+	</script>
+
+</defs>
+<g id="icon_circle">
+	<circle class="lines" cx="150" cy="150" r="134.736"/>
+</g>
+<g id="shape">
+	<path class="lines" d="M217.366,97.603c0,7.235-6.701,13.099-14.97,13.099H97.603c-8.268,0-14.971-5.864-14.971-13.099V84.503
+		c0-7.234,6.703-13.1,14.971-13.1h104.794c8.269,0,14.97,5.865,14.97,13.1V97.603z"/>
+	<path class="lines" d="M217.369,156.55c0,7.233-6.703,13.1-14.97,13.1H97.603c-8.267,0-14.971-5.866-14.971-13.1v-13.1
+		c0-7.234,6.705-13.099,14.971-13.099h104.797c8.267,0,14.97,5.864,14.97,13.099V156.55z"/>
+	<path class="lines" d="M217.366,215.496c0,7.236-6.701,13.101-14.97,13.101H97.603c-8.268,0-14.971-5.864-14.971-13.101v-13.097
+		c0-7.238,6.703-13.103,14.971-13.103h104.794c8.269,0,14.97,5.864,14.97,13.103V215.496z"/>
+</g>
+<g id="details">
+	<line class="st1 lines" x1="116.314" y1="91.053" x2="183.683" y2="91.053"/>
+	<line class="st1 lines" x1="116.315" y1="150" x2="183.684" y2="150"/>
+	<line class="st1 lines" x1="116.314" y1="208.947" x2="183.683" y2="208.947"/>
+</g>
+</svg>

@@ -1,0 +1,53 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" id="icon">
+
+<defs>
+	<style type="text/css">
+		<![CDATA[
+		.lines{fill:#FFFFFF;stroke:#D0D1D3;stroke-width:9.9804;stroke-miterlimit:10;}
+
+		#details { display: block; }
+
+		@media screen and (max-width: 150px) {
+		    #details {
+		        display: none;
+		    }
+		}
+
+		#icon:hover .lines {
+		    fill: #262262;
+		    stroke: white;
+		    transition: .4s;
+		}
+
+		#icon.clicktrigger .lines {
+		    fill: white !important;
+		    stroke: #262262;
+		    transition: .4s;
+		}
+
+		]]>
+	</style>
+
+	<script type="text/javascript">
+		var clickAnim = document.querySelector('#icon');
+
+		clickAnim.addEventListener('click', function() {
+		    this.classList.toggle('clicktrigger');
+		})
+	</script>
+
+</defs>
+<g id="iconcircle">
+	<circle class="lines" cx="150" cy="150" r="134.736"/>
+</g>
+<g id="shape">
+	<circle class="lines" cx="109.329" cy="110.706" r="44.912"/>
+	<path class="lines" d="M222.429,207.928c4.386,4.386,4.386,11.494,0,15.878l0,0c-4.384,4.386-11.493,4.386-15.88,0l-71.453-71.454
+		c-4.385-4.385,3.555-3.555,7.938-7.939l0,0c4.386-4.384,3.555-12.324,7.94-7.939L222.429,207.928z"/>
+</g>
+<g id="details">
+	<path class="lines" d="M88.799,131.236c-11.338-11.338-11.338-29.721,0-41.059"/>
+	<path class="lines" d="M164.905,150.403l-13.931-13.93c-4.385-4.385-3.554,3.555-7.94,7.939l0,0
+		c-4.384,4.385-12.324,3.555-7.938,7.939l13.93,13.93L164.905,150.403z"/>
+</g>
+</svg>
